@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+	font-family: 微軟正黑體;
+}
+
+/* header */
+.topbar{
+	background-color: #f6f6f6;
+}
+
+.sns{
+	display: flex;
+	justify-content: right;
+	padding: 5px 12px;	
+}
+
+a{
+	text-decoration: none;
+}
+
+.fb a{
+	border-right: 1px solid #cccc;
+	padding-right: 10px;
+	margin-right: 10px;
+	color: #4460a0;
+}
+
+.twitter a{
+	color: #21b4ed;
+}
+
+.navbar,.menu{
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar h1 a{
+	width: 200px;
+	height: 60px;
+	display: block;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png) no-repeat;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.menu li{
+	margin: 20px 0px 0px 0px;
+	padding: 0px 20px;
+}
+
+.menu li a{
+	font-size: 15px;
+	color: #0fcf9f;
+	display: block;
+	position: relative;
+	padding-bottom: 25px;
+}
+
+.menu li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 0%;
+    border-bottom: 3px solid #22d3a7;
+    transition: all .3s;
+}
+
+.menu li a:hover::before {
+	width: 100%;
+}
+
+/* main */
+.banner{
+	height: 300px;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+	display: flex;
+    align-items: center;
+}
+
+.banner h2{
+	width: 98%;
+	color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+	line-height: 1.5;
+	padding: 32px 15px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.course{
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0px;
+}
+
+.course-item{
+	width: 300px;
+	box-shadow: 3px 3px 5px #d6d6d6;
+	padding: 0px 15px 25px 15px;
+}
+
+.course-item h3{
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.course-item p{
+	line-height: 1.5;
+	padding: 0px 5px;
+}
+
+.jql{
+	list-style-type: disc;
+	padding: 0px 30px;
+	line-height: 1.5;
+}
+
+.cmp{
+	margin-bottom: 60px;
+}
+
+.cmp h3{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.cmp table{
+	margin: 0 auto;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.cmp tr td{
+	border-top: 2px solid #dddd;
+	border-bottom: 2px solid #dddd;
+}
+
+.tittle{
+	border-top: 2px solid #dddd;
+	background-color: #f7f7f7;
+}
+
+.tittle th,.cmp tr td{
+	padding: 5px 120px 5px 20px;
+}
+
+.heightline{
+	color: #22b28e;
+}
+
+.info{
+	width: 1010px;
+	background: linear-gradient(to bottom, #006e52,#009670);
+}
+
+.info h3{
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	line-height: 1.5;
+	padding: 35px 0px 30px 0px;
+}
+
+.info form{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 25px;
+}
+
+.messeage{
+	margin-bottom: 30px;
+}
+
+.contactinfo{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0px;
+}
+
+.contactinfo label{
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.contactinfo input{
+	height: 20px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	border: 1px;
+}
+
+.btn{
+	width: 50px;
+    border: none;
+    color: white;
+    background:#00cc98;
+    align-self: flex-end;
+	cursor: pointer;
+}
+
+.btn:hover{
+	transform: scale(1.2)
+}
+
+/* footer */
+.footer{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 60px;
+}
+
+.footer h2 a{
+	width: 200px;
+	height: 70px;
+	display: block;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png) no-repeat;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.footer li{
+	padding-bottom: 10px;
+}
+
+.footer span,footer a{
+	color: #e12d80;
+}
