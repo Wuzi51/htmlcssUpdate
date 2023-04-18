@@ -258,7 +258,6 @@ a{
     background:#00cc98;
 	cursor: pointer;
 	align-self: flex-end;
-	display: block;
 }
 
 .btn:hover{
