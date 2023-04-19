@@ -253,9 +253,9 @@ a{
 .btn{
 	width: 70px;
 	font-size: 15px;
-    border: none;
-    color: white;
-    background:#00cc98;
+	border: none;
+	color: white;
+	background:#00cc98;
 	cursor: pointer;
 	align-self: flex-end;
 }
