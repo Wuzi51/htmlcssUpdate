@@ -50,7 +50,7 @@ table {
 .wrap{
 	width: 1000px;
 	margin: 0 auto;
-	font-family: 微軟正黑體 sans-serif;
+	font-family: 微軟正黑體,sans-serif;
 }
 
 /* header */
